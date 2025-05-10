@@ -1,0 +1,161 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background-size: cover !important;
+  font-family: sans-serif;
+  background: url("https://t3.ftcdn.net/jpg/02/91/54/34/360_F_291543490_Mb6abvapPKoKGWjidbl5Tw590c6W8yiK.jpg") center/cover no-repeat;
+}
+
+.left {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right{
+  background: rgba(0, 0, 0, 0.6);
+}
+.left h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.left h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.left p {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formBox {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+.formBox h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.formBox p {
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 1px 2px 3px rgb(164, 164, 170);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  /* .left {
+    display: none;
+  } */
+
+  .right {
+    flex: none;
+    height: 100vh;
+  }
+}
+.errorMsg {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
+.formBox h2{
+  text-align: center;
+}
+.formBox p{
+  text-align: center;
+}
+.errorInput {
+  border-color: red;
+  background-color: #ffe6e6;
+}
+.passwordWrapper {
+  position: relative;
+}
+
+.eyeBtn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #555;
+}
+
+.headText{
+  position: absolute;
+  color: white;
+  top: 2rem;
+  left: 1rem;
+}
+@media (max-width: 600px) {
+  .headText{
+    position: absolute;
+    color: white;
+    top: 0.2rem;
+    left: 1rem;
+  }
+}
+@media (max-width: 490px) {
+  .right {
+    flex: none;
+    height: 100vh;
+    padding: 0.2rem;
+  }
+}

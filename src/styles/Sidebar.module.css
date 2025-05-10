@@ -1,0 +1,93 @@
+.sidebarContainer {
+  width: 260px;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 1rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-left: 0.5rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3a3a3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateX(4px);
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.navItem {
+  margin-bottom: 1.2rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: #f0f0f0;
+}
+
+/* For the active link */
+.navItem:first-child .navLink {
+  background-color: #3498db;
+  color: white;
+}
+
+@media (max-width: 562px) {
+  .navLink {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.7rem;
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+}
+@media (max-width: 450px) {
+  .navLink {
+    font-size: 0.6rem;
+  }
+}
