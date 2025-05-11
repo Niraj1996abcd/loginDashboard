@@ -154,3 +154,65 @@
   color: #333;
   margin: 0;
 }
+
+@media (max-width: 600px) {
+  .modalContainer {
+     max-width: 70%;
+    padding: 0 20px; /* Add horizontal padding */
+  }
+
+  .modalTitle {
+    position: static;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .modalContent {
+    padding: 15px;
+  }
+
+  .closeButton {
+    top: -10px;
+    right: 40px;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+  }
+
+  .visitorInfo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .avatarSection {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .statusSection {
+    position: static;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .detailsGrid {
+    flex-direction: column;
+  }
+
+  .detailColumn {
+    min-width: 100%;
+  }
+}
+@media (min-width: 601px) and (max-width: 856px) {
+  .modalContainer {
+    max-width: 70%; /* Reduces the width slightly from full desktop width */
+    padding: 0 20px; /* Adds horizontal padding */
+    box-sizing: border-box;
+  }
+
+  .modalContent {
+    padding: 18px; /* Optional: slightly reduce inner padding for compactness */
+  }
+}
