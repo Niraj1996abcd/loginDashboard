@@ -159,6 +159,7 @@
   .modalContainer {
      max-width: 70%;
     padding: 0 20px; /* Add horizontal padding */
+    margin-top: 10rem;
   }
 
   .modalTitle {
